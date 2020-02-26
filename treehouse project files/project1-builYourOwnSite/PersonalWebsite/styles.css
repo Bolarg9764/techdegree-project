@@ -1,0 +1,226 @@
+/* Global Layout Set-up */
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display==swap');
+* {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+.main-nav{
+  position: fixed;
+  width: 100%;
+  min-height: 60px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007BFF;
+  z-index: 1000;
+  }
+.main-nav .logo {
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-left: -20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight:700;
+  }
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+  }
+.main-nav ul {
+  position: relative;
+  display: flex;
+  }
+.main-nav ul li{
+  position: relative;
+  list-style: none;
+  }
+.main-nav ul li a{
+  font-size: 18px;
+  position: relative;
+  padding:10px 10px 0;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  }
+.main-nav a:hover {
+  color: rgba(0, 0, 0, 0.356);
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+header {
+  text-align: center;
+  background: url("RichmondBG.jpg") no-repeat;
+  max-width: 90%;
+  height: 600px;
+  background-size: cover;
+  margin-left: 80px;
+
+
+}
+.profile-image {
+  width: 150px;
+  height: 150px;
+  margin-top: 250px;
+   border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+  cursor: pointer;
+  }
+
+  header .profile-image:hover {
+  transform: rotate(5deg);
+    
+  }
+
+.name  {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+  font-weight: bold;
+  }
+
+header p{
+  background-color: #efefef;
+  font: italic;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+  }
+
+.content-wrapper{
+  max-width: 90%;
+  margin-left: 80px;
+  }
+
+h2 {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.content-wrapper:before,
+.content-wrapper:after {
+  content:"";
+  display:table;
+  clear: both;
+  }
+.content-wrapper div.card-1 {
+  float: left;
+  width: 45%;
+  height: 350px;
+  text-align: left;
+  padding-left: 40px;
+  
+  margin-top: 90px;
+  padding-top: 50px;
+  max-height: 100vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0;
+  }
+.content-wrapper div.card-2 {
+  float: right;
+  width: 45%;
+  height: 350px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 50px;
+  margin-top: 90px;
+  max-height: 100vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0;
+  }
+.content-wrapper p{
+  max-width: 450px;
+
+}
+
+section div.card-3 {
+max-width: 50%;
+/* outline: 1px dotted red; */
+margin-left: 80px;
+max-height: 100vh;
+margin-top: 100px;
+}
+
+.card-3 h2 {
+  padding-bottom: 10px;
+  font-weight: bold;
+  
+}
+    section img{
+max-width: 250px;
+      
+    }
+  hr { 
+    width: 800px;
+    margin: 40px auto ;
+    left: 65px;
+    }
+    footer {
+      width: 100%;
+      min-height: 30px;
+      padding: 0px 0px 20px 20px;
+    }
+    
+    footer .copyright {
+      top: -8px;
+      font-size: .75em;
+    }
+    
+    footer ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    footer ul li {
+      display: inline-block;
+    }
+    
+    a.social {
+      display: inline-block;
+      text-indent: -9999px;
+      margin-left: 5px;
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+      opacity: .4;
+      transition: all .5s;
+    }
+    a.twitter {
+      background-image: url(twitter.svg);
+    }
+    a.linkedin {
+      background-image: url(linkedin.svg);
+    }
+    a.github {
+      background-image: url(github.svg);
+    }
+    a.social:hover {
+      opacity: 1;
+    }
+    /* .clearfix {
+      clear: both;
+    } */
+  
+    footer p {
+    text-align: center; 
+    padding-top: 20px;
+    }
+    
+  
+  
+  
+   
